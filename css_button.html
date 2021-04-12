@@ -1,0 +1,187 @@
+<html lang="en">
+     <head>
+	      <title> CSS Tutorials: Button</title>
+		  <link rel="icon" type="image/png" href="logo.png">
+		  <link rel="stylesheet" href="website.css">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	      <script src="website.js"></script>
+	 </head>
+	 
+	 <body id="body" ononline="onFunction()" onoffline="offFunction()">
+	      <div class="navbar">
+		       <img draggable="none" class="logo2" src="logo.png" width="3%">
+		       <a style="float: left;" class="logo" href="#"> <label> CODER GURU </label></a>
+			   <a href="#" style="color: #0076F7;font-weight: bold"> LOGIN</a>
+			   <a onclick="document.getElementById('myModal').style.display = 'block';" style="color: #0076F7;font-weight: bold"> CODE</a>
+			   <a href="#"> JAVA</a>
+			   <a href="css_home.html" style="background: #ddd;"> CSS</a>
+			   <a href="#"> QBASIC</a> 
+			   <a onclick="location = 'html.html'"> HTML</a>
+			   <a onclick="location = 'index.html'"> HOME</a>
+		  </div>
+		  <div id="myProgress">
+               <div id="myBar"></div>
+          </div>
+		  <div id="myModal" class="modal-content">
+			       <span onclick="document.getElementById('myModal').style.display = 'none'" class="close">&times;</span>
+		           <h2> Choose your favourite online edtor</h2>
+				   <div class="choose">
+				        <a target="_blank" href="https://www.w3schools.com/code/tryit.asp?filename=GP851FIA2JRX"> W3School</a></li>
+						<a target="_blank" href="https://codepen.io/smffffff/pen/YzNVjKN"> Code Pen</a>
+						<a target="_blank" href="http://jsfiddle.net/u3fv9p47/"> JSFiddle</a>
+						<a target="_blank" href="https://jsbin.com/?html,output"> JSBin</a>
+				   </div>
+				   </table>
+		  </div>
+		  <div class="content">
+		      <input title="Type only one word to get accurate search" autocomplete="off" onkeyup="myFunction()" placeholder="Search..." id="Search" type="text" name="search"/><br><br>
+				  <h3 class="head"> HTML CSS</h3>
+				   <a class="target" href="css_home.html"> CSS Home</a>
+				   <a class="active" href="css_button.html"> CSS Buttons</a>
+				   <a class="target" href="css_howto.html"> CSS How to</a>
+				   <a class="target" href="css_bg.html"> CSS Background</a>
+				   <a class="target" href="css_color.html"> CSS Color</a>
+				   <a class="target" href="css_margin.html"> CSS Margin</a>
+				   <a class="target" href="css_padding.html"> CSS Padding</a>
+				   <a class="target" href="css_width.html"> CSS Width</a>
+				   <a class="target" href="css_height.html"> CSS Height</a>
+				   <a class="target" href="css_border.html"> CSS Border</a>
+				   <a class="target" href="css_outline.html"> CSS Outline</a>
+				   <a class="target" href="css_text.html"> CSS Text</a>
+				   <a class="target" href="css_font.html"> CSS Font</a>
+				   
+           			   
+		  </div>
+		  <div  class="main1">
+		       <h1> CSS Button Styling</h1><hr>
+			   <p> With the CSS you can make your button more attractive.</p> 
+               <p> You can also make a button using <code>&lt;a&gt;</code> tag by using css.</p> 
+			   <p> In this tutorials we will teach you how to make a styled button.</p>
+			   <p> Buttons using a tag are given below:</p><br>
+			   <div>
+			   	  <style type="text/css">
+			   	  	.demobtn1 {
+			   	  		padding: 10px;
+			   	  		background: #fff;
+			   	  		border: 1px solid #ccc;
+			   	  		text-decoration: none;
+			   	  		color: #000;
+			   	  		background-image: linear-gradient(#ffff, #f1f1f1);
+			   	  	}
+			   	  	.demobtn1:hover {
+			   	  		background: linear-gradient(#f8f8f8, #ddd);
+			   	  		border: 1px solid #ddd;
+			   	  	}
+			   	  	.demobtn1:active {
+			   	  		background: linear-gradient(#f1f1f1, #ccc);
+			   	  	}
+			   	  	.demobtn2 {
+			   	  		padding: 10px;
+			   	  		background: #fff;
+			   	  		margin-left: 10px;
+			   	  		border: 2px solid #000;
+			   	  		color: #000;
+			   	  		text-decoration: none;
+			   	  		border-radius: 10px;
+			   	  		transition: 0.1s ease;
+			   	  	}	
+			   	  	.demobtn2:hover {
+			   	  		background: #000;
+			   	  		color: #fff;
+			   	  	}		   	  		
+			   	  	.demobtn2:active {
+			   	  		opacity: 0.7;
+			   	  	}
+                    .demobtn3 {
+			   	  		padding: 10px;
+			   	  		background: #fff;
+			   	  		margin-left: 10px;			
+			   	  		color: #000;
+			   	  		border: 2px solid #f1f1f1;
+			   	  		text-decoration: none;
+			   	  		border-radius: 10px;
+			   	  		transition: 0.1s ease;
+			   	  		box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+			   	  	}	
+			   	  	.demobtn3:hover {
+			   	  		background: #fff;
+			   	  		color: #000;
+			   	  		box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+			   	  	}		   	  		
+			   	  	.demobtn3:active {
+			   	  		opacity: 0.7;			   	
+			   	  	}
+			   	  	.demobtn4 {
+                        padding: 10px;
+                        margin-left: 10px;
+                        border: 2px solid red;
+                        background: transparent;
+                        color: red;
+                        text-decoration: none;
+                        transition: 0.3s ease;
+			   	  	}
+			   	  	.demobtn4:hover {
+			   	  		border: 2px solid blue;
+			   	  		color: blue;
+			   	  	}
+			   	  </style>
+			   	   <a href="#" class="demobtn1"> Click Me</a>
+			   	   <a href="#" class="demobtn2"> Click Me</a>
+			   	   <a href="#" class="demobtn3"> Click Me</a>
+			   	   <a style="margin-left: 10px;text-decoration: none;" href="#" class="btn">Click Me</a>
+			   	   <a href="#" class="demobtn4"> Click Me</a>
+			   </div><br><br>
+			   <p>You can also edit these in <a class="a" href="https://codepen.io/smffffff/pen/YzNVjKN"> here</a>.</p>
+			   <div style="height: 57%;" class="editor"><h3> Example:</h3>
+			   <textarea title="style.css" style="border-left: 3px solid red;position: absolute;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select()" cols="65" rows="17" readonly>
+body {
+	margin: 0;
+} 
+div {
+	padding: 15px;
+	background: #ddd; /*grey background*/
+	width: 50%;
+	height: 50%:
+	position: absolute;
+	top: 20%;
+	left: 30%;
+}
+.button {
+	padding: 5px;
+	background: #000; /*black background*/
+	color: #fff; /*white color*/
+}
+</textarea>
+<textarea title="index.html" style="position: relative;left: 48%;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select()" cols="70" rows="17" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+	    <h2> hello</h2>
+	    <a href="#" class="button">Click Me</a>
+	</div>
+
+</body>
+</html>
+</textarea>
+		        
+		       </div>
+		  </div>
+		  
+		  
+		  
+			   
+		  
+		  
+		  
+		  
+	</body>	  
+</html>		  

@@ -1,0 +1,238 @@
+<html lang="en">
+     <head>
+	      <title> HTML Tutorials: Button</title>
+		  <link rel="icon" type="image/png" href="logo.png">
+		  <link rel="stylesheet" href="website.css">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	      <script src="website.js"></script>
+	 </head>
+	 
+	 <body>
+	      <div class="navbar">
+		       <img draggable="none" class="logo2" src="logo.png" width="3%">
+		       <a style="float: left;" class="logo" href="#"> <label> CODER GURU </label></a>
+			   <a href="#" style="color: #0076F7;font-weight: bold"> LOGIN</a>
+			   <a onclick="document.getElementById('myModal').style.display = 'block';"  style="color: #0076F7;font-weight: bold"> CODE</a>
+			   <a href="#"> JAVA</a>
+			   <a href="css_home.html"> CSS</a>
+			   <a href="#"> QBASIC</a> 
+			   <a onclick="location = 'html.html'" style="background: #ddd;"> HTML</a>
+			   <a onclick="location = 'index.html'"> HOME</a>
+		  </div>
+		  <div id="myProgress">
+               <div id="myBar"></div>
+          </div>
+		  <div id="myModal" class="modal-content">
+			       <span onclick="document.getElementById('myModal').style.display = 'none'" class="close">&times;</span>
+		           <h2> Choose your favourite online edtor</h2>
+				   <div class="choose">
+				        <a target="_blank" href="https://www.w3schools.com/code/tryit.asp?filename=GP851FIA2JRX"> W3School</a></li>
+						<a target="_blank" href="https://codepen.io/smffffff/pen/YzNVjKN"> Code Pen</a>
+						<a target="_blank" href="http://jsfiddle.net/u3fv9p47/"> JSFiddle</a>
+						<a target="_blank" href="https://jsbin.com/?html,output"> JSBin</a>
+				   </div>
+				   </table>
+		  </div>
+		  <div class="content">
+		       <input title="Type only one word to get accurate search" autocomplete="off" onkeyup="myFunction()" placeholder="Search..." id="Search" type="text" name="search"/><br><br>
+		         <h3 class="head"> HTML Tags</h3>
+		           <a onclick="move()" class="target" href="html.html"> Home</a>
+		           <a onclick="move()" class="target" href="html_link.html"> Link</a>
+				   <a onclick="move()" class="active" href="html_button.html"> Button</a>
+				   <a onclick="move()" class="target" href="html_heading.html"> Heading</a>
+				   <a onclick="move()" class="target" href="html_p.html"> Paragraph</a>
+				   <a onclick="move()" class="target" href="html_div.html"> Div tag</a>
+				   <a onclick="move()" class="target" href="html_head.html"> Head tag</a>
+				   <a onclick="move()" class="target" href="html_body.html"> Body tag</a>
+				   <a onclick="move()" class="target" href="#meta"> Meta tag </a>
+				   <a onclick="move()" class="target" href="#script"> Script tag</a>
+				   <a onclick="move()" class="target" href="#ul"> Ul tag</a>
+				   <a onclick="move()" class="target" href="#li"> Li tag<font style="color: transparent"> list</font></a>
+				   <a onclick="move()" class="target" href="#a"> a tag<font style="color: transparent"> link</font></a>
+				   <a onclick="move()" class="target" href="#button"> Marquee tag</a>
+				   <a onclick="move()" class="target" href="#label"> Label tag</a>
+				   <a onclick="move()" class="target" href="#img"> Img tag<font style="color: transparent">image</font></a>
+				   <a onclick="move()" class="target" href="#form"> Form tag</a> 
+				   <a onclick="move()" class="target" href="#font"> Font tag</a>
+				   <a onclick="move()" class="target" href="#input"> Input tag</a> 
+				   <a onclick="move()" class="target" href="#input_color"> Input color tag</a>  
+				   <a onclick="move()" class="target" href="#form"> Iframe tag</a>  
+				   <a class="target" href="#comment">Comment tag</a> 
+				   <a class="target" title="css" href="#style">Style tag</a> 
+				   <a class="target" href="#bold"> Bold<font style="color: transparent">formatting</font> </a> 
+				   <a class="target" href="#underline"> Underline<font style="color: transparent">formatting</font></a> 
+				   <a class="target" href="#st"> Strikethrough<font style="color: transparent">formatting</font></a> 
+				   <a class="target" href="#center">Center tag</a> 
+				   <a class="target" href="#section">Section tag</a> 
+				   <a class="target" href="#header">Header tag</a> 
+				   <a class="target" href="#footer">Footer tag</a> 
+				   <a class="target" href="#hr">Hr tag</a> 
+				   <a class="target" href="#br">Br tag</a> 
+				   <a class="target" href="#fieldset"> Fieldset Tag</a> 
+				   <a class="target" href="#i">i tag<font style="color: transparent">formatting</font></a> 
+				   <a class="target" href="#strong">Strong tag<font style="color: transparent">formatting</font></a> 
+				   <a class="target" href="#output">Output tag</a> 
+				   <a class="target" href="#select">Select tag</a> 
+				   <a class="target" href="#option">Option tag</a> 
+				   <a class="target" href="#super">Superscripted tag</a> 
+				   <a class="target" href="#ol">Ol tag</a> 
+				   <a class="target" href="#video">Video tag<font style="color: transparent">image</font></a> <br>    
+                 <h3 class="head"> HTML Attributes</h3>         
+		  </div>
+		  
+		  
+		  <div class="m1">
+		       <h1>Button tag in HTML</h1><hr>
+			   <p> Button are defined as a clickable element in html. You can add any text in it and also style it by using css.Inside a button element you can put text (and tags like <code>&lt;i&gt;, &lt;b&gt;</code>).</p><p> That is not possible with a button created with the <a href="#input"><code>&lt;input&gt;</code></a> element!</p>
+			   <p> The tag used to make a button is <code>&lt;button&gt;</code>. 
+			   <div class="editor"><p> Button with text</p>
+			             <textarea onclick="this.focus();this.select()" cols="100" rows="1" readonly> <button> Your text</button></textarea>
+		                 <h4> Result</h4><button> Your text</button> 
+		       </div>
+			   <h3> Use of button</h3>
+			   <p> As you learnt that button can be also used as a link for other page or sites in HTML Link tutorial. But you can also
+			       use button in onclick javascript functions. </p>
+			   <p> Example:</p> 
+                 <div style="height: 38%;" class="editor"><p> When clicked on button some text is shown.</p>
+			             <textarea style="overflow: hidden;" onclick="this.focus();this.select()" cols="100" rows="3" readonly>
+<p> Click on button</p>
+<button onclick="document.getElementById('p2').style.display = 'block'"> Click Me!</button>
+<p style="display: none" id="p2"> Hello, friends</p> 
+</textarea>
+		                 <h4> Result</h4><p> Click on button</p>
+						               <button onclick="document.getElementById('p2').style.display = 'block'"> Click Me!</button>
+                                       <p style="display: none" id="p2"> Hello, friends</p> 
+                                       
+		       </div><br><br>
+			   <h2> Style the button</h2><hr>
+			   <p> You can use <code>&lt;style&gt;</code> tag to style the button.</p>
+			   <p> An example is given below:</p><br>
+			   <style>
+			    .btn1 {
+				   background: #fff;
+				   color: #000;
+				   outline: none;
+				   border: 2px solid #000;
+				   padding: 10px;
+				   border-radius: 10px;
+				   cursor: pointer;
+				   font-size: 15px;
+				   font-family: arial;
+				}
+				.btn1:hover {
+				   background: #000;
+				   color: #fff;
+				   border: 2px solid #000;
+				} 
+				.btn2 {
+				   background: #fff;
+				   color: blue;
+				   outline: none;
+				   border: 2px solid blue;
+				   padding: 10px;
+				   border-radius: 10px;
+				   cursor: pointer;
+				   font-size: 15px;
+				   font-family: arial;
+				}
+				.btn2:hover {
+				   background: blue;
+				   color: fff;
+				   border: 2px solid #blue;
+				} 
+				.btn3 {
+				   background: #fff;
+				   color: red;
+				   outline: none;
+				   border: 2px solid red;
+				   padding: 10px;
+				   border-radius: 10px;
+				   cursor: pointer;
+				   font-size: 15px;
+				   font-family: arial;
+				}
+				.btn3:hover {
+				   background: red;
+				   color: fff;
+				   border: 2px solid red;
+				}
+				
+				
+			   </style>
+			   <button class="btn1"> Hover Black </button>
+			   <button class="btn2"> Hover Blue</button>
+			   <button class="btn3"> Hover Red</button>
+			   <br><br><br><br>
+			   <div style="height: 157%;overflow: hidden" class="editor"><h3> Code:</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select();" cols="143" rows="58" readonly>
+<style>
+
+.btn1 {
+background: #fff;
+color: #000;
+outline: none;
+border: 2px solid #000;
+padding: 10px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 15px;
+font-family: arial;
+}
+.btn1:hover {
+background: #000;
+color: #fff;
+border: 2px solid #000;
+} 
+
+.btn2 {
+background: #fff;
+color: blue;
+outline: none;
+border: 2px solid blue;
+padding: 10px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 15px;
+font-family: arial;
+}
+.btn2:hover {
+background: blue;
+color: #fff;
+border: 2px solid #blue;
+} 
+
+.btn3 {
+background: #fff;
+color: red;
+outline: none;
+border: 2px solid red;
+padding: 10px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 15px;
+font-family: arial;
+}
+.btn3:hover {
+background: red;
+color: #fff;
+border: 2px solid red;
+}
+							
+</style>
+
+<button class="btn1"> Hover Black </button>
+<button class="btn2"> Hover Blue</button>
+<button class="btn3"> Hover Red</button>
+</textarea> 
+			   </div> <br><br>
+			   <p> Learn our <a class="a" href="css_home.html">CSS tutorial</a> also, to get free css education.</p>
+		  </div>
+		  
+		  
+		  
+		  
+	</body>	  
+</html>		  

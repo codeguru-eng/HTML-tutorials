@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	font-family: verdana;
+}
+
+.btn-click1 {
+	padding: 10px 25px;
+	background: linear-gradient(#00B4FF, #0067FF);
+	outline: none;
+	border: 2px solid #fff;
+	font-size: 16px;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 10px;
+	margin: 4px;
+	transition: 0.3s ease;
+	
+}
+.btn-click1:active {
+    box-shadow: #41B3F2 0px 0px 0px 3px;
+
+    
+}
+.btn-click1:hover {
+	background: linear-gradient(#0478AC, #0422AC);
+
+}
+
+.btn-click2 {
+	padding: 10px 20px;
+	background: #fff;
+	margin-left: 10px;
+	border-radius: 15px;
+	font-family: verdana;
+	font-size: 16px;
+	border: 2px solid #000;
+	color: #000;
+	cursor: pointer;
+	outline: none;
+	transition: 0.3s ease;
+}
+.btn-click2:hover {
+	background: #f2f2f2;
+}
+
+.btn-click2:active {
+	background: #000;
+	color: #fff;
+}

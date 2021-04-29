@@ -3,6 +3,60 @@ body {
 	font-family: verdana;
 }
 
+a {
+	text-decoration: none;
+	padding: 2px;
+	color: #004AF7;
+	cursor: pointer;
+}
+a:hover {
+	color: #fff;
+	background: #004AF7;
+}
+
+
+
+.navbartop-dark {
+	z-index: 9999;
+	position: fixed;
+	margin: 0px;
+	padding: 20px;
+	top: 0;
+	width: 100%;
+	color: #fff;
+    background-color: #000;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.navbartop-dark a {
+	margin: 10px;
+	padding: 15px;
+	background: #000;
+	position: relative;
+    color: #ccc;
+    left: 57%;
+    text-decoration: none;
+}
+
+.navbartop-dark a:hover {
+	color: #fff;
+}
+
+.Logo {
+	font-size: 18px;
+	margin: 10px;
+	font-weight: bold;
+	position: relative;
+
+}
+
+.navbartop-dark .active {
+	border-bottom: 5px solid #fff;
+	color: #fff;
+}
+
+
+
 .btn-click1 {
 	padding: 10px 25px;
 	background: linear-gradient(#00B4FF, #0067FF);
@@ -12,18 +66,15 @@ body {
 	cursor: pointer;
 	color: #fff;
 	border-radius: 10px;
-	margin: 4px;
 	transition: 0.3s ease;
 	
 }
 .btn-click1:active {
-    box-shadow: #41B3F2 0px 0px 0px 3px;
-
+    box-shadow: #00B4FF 0px 0px 0px 3px;
     
 }
 .btn-click1:hover {
-	background: linear-gradient(#0478AC, #0422AC);
-
+	background: linear-gradient(#00a2FF, #000AF7);
 }
 
 .btn-click2 {
@@ -46,4 +97,167 @@ body {
 .btn-click2:active {
 	background: #000;
 	color: #fff;
+}
+
+
+
+
+.content-column1 {
+	position: absolute;
+	top: 12%;
+	padding: 25px;
+	width: 45%;
+	overflow: hidden;
+}
+.content-column2 {
+    position: absolute;
+	top: 12%;
+	margin-left: 75px;
+	width: 45%;
+	padding: 15px;
+	padding-top: 10px;
+	border: 2px solid #f1f1f1;
+	left: 45%;
+	overflow: hidden;
+}
+
+form {
+	padding-top: 10px;
+}
+
+
+.inputdark {
+	width: 96%;
+    padding: 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+.inputdark:hover {
+	border-color: #ddd;
+}
+
+
+.inputdark:focus {
+	cursor: text;
+	background: #000;
+	color: #fff;
+	border: 2px solid #000;
+}
+
+label {
+	font-size: 15px;
+}
+
+img {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 6px -4px, rgba(0, 0, 0, 0.3) 0px 2px 10px -1px;
+}
+
+p {
+	font-family: arial;
+}
+
+form button {
+	margin-top: 15px;
+	width: 100%;
+}
+
+
+.btndark-submit {
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	outline: none;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btndark-submit:active {
+	opacity: 0.7;
+}
+
+.linkstyle-2 {
+	background: #000;
+	color: #fff;
+	padding: 2px;
+	margin: 2px;
+	text-decoration: none;
+	transition: 0.3s ease;
+	font-weight: bold;
+}
+
+.linkstyle-2:hover {
+	color: #fff;
+	font-weight: bold;
+	background-color: #0000ff;
+}
+
+.warning {
+	padding: 15px;
+	color: #fff;
+	text-indent: 15px;
+	cursor: pointer;
+	background: #000;
+}
+
+#warning {
+	position: absolute;
+	top: 600px;
+}
+
+.btn-sm {
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #fff;
+	transition: 0.2s ease;
+	cursor: pointer;
+	background-image: linear-gradient(to top, #0c3483 0%, #004AF7 100%, #9379B1 100%, #004AF7 100%);
+}
+.btn-sm:hover {
+	background-image: linear-gradient(to top, #0c3483 0%, #008DF7 100%, #008DF7 100%, #008DF7 100%);
+	color: #fff;
+}
+
+.btn-sm:active {
+	box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 4px;
+}
+
+.button-gradient {
+	position: relative;
+	display: inline-block;
+	padding: 12px 36px;
+	user-select: none;
+	margin: 10px 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 2px;
+	border-radius: 40px;
+	overflow: hidden;
+	transition: 0.3s ease;
+	background: linear-gradient(90deg, #49A3C2, #5600B5);
+}
+.button-gradient:hover {
+	background: linear-gradient(90deg, #49A3C2, #5600B5);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.button-gradient:active {
+	background: linear-gradient(90deg, #49A3C2, #5600B5);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.button-gradient:focus {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
 }

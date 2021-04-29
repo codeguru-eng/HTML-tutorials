@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+     <head>
+	      <title> CSS Tutorials: How to</title>
+		  <link rel="icon" type="image/png" href="logo.png">
+		  <link rel="stylesheet" href="website.css">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	      <script src="website.js"></script>
+	 </head>
+	 
+	 <body id="body" ononline="onFunction()" onoffline="offFunction()">
+	      <div class="navbar">
+		       <img draggable="none" class="logo2" src="logo.png" width="3%">
+		       <a style="float: left;" class="logo" href="#"> <label> CODER GURU </label></a>
+			   <a href="#" style="color: #0076F7;font-weight: bold"> LOGIN</a>
+			   <a onclick="document.getElementById('myModal').style.display = 'block';" style="color: #0076F7;font-weight: bold"> CODE</a>
+			   <a href="#"> J-SCRIPT</a>
+			   <a href="css_home.html" style="background: #ddd;"> CSS</a>
+			   <a href="#"> QBASIC</a> 
+			   <a onclick="location = 'html.html'"> HTML</a>
+			   <a onclick="location = 'index.html'"> HOME</a>
+		  </div>
+		  <div id="myProgress">
+               <div id="myBar"></div>
+          </div>
+		  <div id="myModal" class="modal-content">
+			       <span onclick="document.getElementById('myModal').style.display = 'none'" class="close">&times;</span>
+		           <h2> Choose your favourite online edtor</h2>
+				   <div class="choose">
+				        <a target="_blank" href="https://www.w3schools.com/code/tryit.asp?filename=GP851FIA2JRX"> W3School</a></li>
+						<a target="_blank" href="https://codepen.io/smffffff/pen/YzNVjKN"> Code Pen</a>
+						<a target="_blank" href="http://jsfiddle.net/u3fv9p47/"> JSFiddle</a>
+						<a target="_blank" href="https://jsbin.com/?html,output"> JSBin</a>
+				   </div>
+				   </table>
+		  </div>
+		  <div class="content">
+		      <input title="Type only one word to get accurate search" autocomplete="off" onkeyup="myFunction()" placeholder="Search..." id="Search" type="text" name="search"/><br><br>
+				  <h3 class="head"> HTML CSS</h3>
+				   <a onclick="move()" class="target" href="css_home.html"> CSS Home</a>
+				   <a onclick="move()" class="target" href="css_button.html"> CSS Buttons</a>
+				   <a onclick="move()" class="active" href="css_howto.html"> CSS How to</a>
+				   <a onclick="move()" class="target" href="css_bg.html"> CSS Background</a>
+				   <a onclick="move()" class="target" href="css_color.html"> CSS Color</a>
+				   <a onclick="move()" class="target" href="css_margin.html"> CSS Margin</a>
+				   <a onclick="move()" class="target" href="css_padding.html"> CSS Padding</a>
+				   <a onclick="move()" class="target" href="css_width.html"> CSS Width</a>
+				   <a onclick="move()" class="target" href="css_height.html"> CSS Height</a>
+				   <a onclick="move()" class="target" href="css_border.html"> CSS Border</a>
+				   <a onclick="move()" class="target" href="css_outline.html"> CSS Outline</a>
+				   <a onclick="move()" class="target" href="css_text.html"> CSS Text</a>
+				   <a onclick="move()" class="target" href="css_font.html"> CSS Font</a><br>
+				   <h3 class="head"> Codeguru CSS</h3>
+           			   
+		  </div>
+		  <div  class="main1">
+		       <h1> CSS How to</h1><hr>
+			   <p> In this tutorials we will show you some awesome websites made by CSS.</p>
+			   <p> Code snippet for CSS and Html.</p>
+			   <div class="pagination">
+			   	  <a style="border-top-left-radius: 15px;border-bottom-left-radius: 15px;" href="#1">1</a>
+			   	  <a href="#2">2</a>
+			   	  <a href="#3">3</a>
+			   	  <a href="#4">4</a>
+			   	  <a href="#5">5</a>
+			   	  <a style="border-top-right-radius: 15px;border-bottom-right-radius: 15px;" href="#6">6</a>
+			   </div><br id="1"><br><br><br>
+               
+			   <div  class="editor"><h3> How to make a navbar with icon?</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select();" cols="143" rows="50" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+body {
+  margin:0;
+ }
+
+.navbar {
+width: 100%;
+overflow: auto;
+background: #000;
+}
+
+
+.navbar a {
+padding: 15px;
+color: #fff;
+float: right;
+text-decoration: none;
+font-size: 16px;
+}
+
+
+.navbar a:hover {
+background: #ccc;
+color: #000;
+}
+
+
+.navbar a:focus {
+ background: #fff;
+ color: #000;
+ }
+
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="#"><i class="fa fa-home"></i> Home</a>
+		<a href="#"><i class="fa fa-search"></i> Search</a>
+		<a href="#"><i class="fa fa-envelope"></i> Contact</a>
+		<a href="#"><i class="fa fa-info"></i> About</a>
+		<a href="#"><i class="fa fa-user"></i> Login</a>
+	</div>
+</body>
+</html>
+</textarea> <br>
+        <button onclick="window.open('https://codepen.io/smffffff/pen/oNByQmo' + location.search)" class="btn"> View Demo</button><br><br>
+			   </div><br id="2"><br><br>
+    			   <div class="editor"><h3> How to make button hoverable in CSS?</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select();" cols="143" rows="33" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+body {
+	margin: 0;
+}
+
+button {
+	padding: 5px 15px;
+	background: #fff;
+	border: 2px solid blue;
+	font-size: 16px;
+        outline: none;  
+	color: blue;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+button:hover {    /*Using :hover after element*/
+	background: blue;
+	color: #fff;
+}
+
+	</style>
+</head>
+<body>
+		<button>Hello</button>
+</body>
+</html>
+</textarea> <br>
+        <button onclick="window.open('https://codepen.io/smffffff/pen/YzNjNMY' + location.search)" class="btn"> View Demo</button><br><br><br id="3">
+			   </div>	
+<br><br>
+    			   <div class="editor"><h3> How to remove outline in button?</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;border-left-color: red"  onclick="this.select();" cols="143" rows="1" readonly>
+outline: none; /*Add this property*/
+</textarea> <br>
+      <br>
+			   </div>	<br>	<br>   
+			    <div class="editor"><h3> How to make a vertical navbar?</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select();" cols="143" rows="45" readonly>
+<style> 
+
+body {
+    margin: 0;
+}
+.vertical-nav {             
+    top: 0;
+    z-index: 1;
+    overflow: auto;
+    width: 200px;
+    background: #000;
+    height: 99.5%;
+    user-select: none;  
+    text-decoration: none;
+    margin: 0;
+    margin-left: -2px;
+    border: 2px solid #ddd;
+}
+.vertical-nav a {
+    display: block; /*Important*/
+    padding: 10px;
+    font-family: arial;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    background: #000;
+}
+.vertical-nav a:hover {
+    background: #fff;
+    color: #000;
+}
+
+</style>
+
+<div class="vertical-nav">
+    <a href="#"> Click 1</a>
+    <a href="#"> Click 2</a>
+    <a href="#"> Click 3</a>
+    <a href="#"> Click 4</a>
+    <a href="#"> Click 5</a>
+    <a href="#"> Click 6</a>
+    <a href="#"> Click 7</a>
+    <a href="#"> Click 8</a>
+</div>
+</textarea> 
+      <br><button onclick="window.open('Demo vertical tab.htm' + location.search)" class="btn"> View Demo</button><br><br><br id="3">
+			   </div>	<br><br>
+			   <div class="editor"><h3> How to make shadow of any object?</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;border-left-color: red"  onclick="this.select();" cols="143" rows="1" readonly>
+box-shadow: 0px 5px 15px 0px #ccc;   /*Use this property to any object*/
+</textarea> <br>
+      <br>
+			   </div>	<br>	<br>
+			   			    <div class="editor"><h3> How to make a responsive login form?</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select();" cols="143" rows="62" readonly>
+<style> 
+
+body {
+    margin: 0;
+    font-family: arial;
+}
+form {             
+    position: static;
+    padding: 15px;
+    width: 20%; 
+    margin-left: 50%;
+    margin-top: 100px;
+    transform: translate(-50%, 0);
+    background: #ddd;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+	width: 100%;
+	margin: 0;
+}
+
+button {
+	padding: 10px 20px;
+	width: 100%;
+	font-size: 15px;
+	outline: none;
+	border: none;
+	background: blue;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background: royalblue;
+}
+
+@media only screen and (max-width: 800px) {
+	form {
+		width: 90%;
+		margin-left: 50%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		transform: translate(-50%, 0);
+	}
+}
+
+</style>
+
+<form action="#">
+	<h1>Login Form</h1>
+	<input type="text" placeholder="First Name.." name="firstname" required="">
+	<input type="text" placeholder="Last Name.." name="lastname" required="">
+	<input type="email" name="email" placeholder="Email..." required="">
+	<input type="password" placeholder="Password.." name="password" required="">
+	<button type="submit"> Login</button>
+</form>
+</textarea> 
+      <br><button onclick="window.open('Demo vertical tab.htm' + location.search)" class="btn"> View Demo</button><br><br><br id="3">
+			   </div>	<br><br>
+
+			   			   			    <div class="editor"><h3> How to make a simple animated search box?</h3>
+			             <textarea style="cursor: default;font-size: 15px;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"  onclick="this.select();" cols="143" rows="26" readonly>
+<style> 
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+div {
+	padding: 15px;
+}
+.search {
+	padding: 10px;
+	width: 10%;
+	transition: 1s ease;
+	border-radius: 15px;
+	outline: none;
+	border: 2px solid #ccc;
+}
+.search:focus {
+	width: 30%;
+	border-color: #000;
+}
+</style>
+
+<div>
+    <input class="search" type="search" name="search" placeholder="Search...">
+</div>
+</textarea> 
+      <br><button onclick="window.open('Demo vertical tab.htm' + location.search)" class="btn"> View Demo</button><br><br><br id="3">
+			   </div>	   
+		  </div>
+		  
+		  
+		  
+			   
+		  
+		  
+		  
+		  
+	</body>	  
+</html>		  

@@ -6,6 +6,7 @@ body {
 .navbar {
 	padding: 15px;
 	z-index: 9999;
+	user-select: none;
 	position: fixed;
 	margin: 0px;
 	width: 98%;
@@ -27,7 +28,7 @@ body {
 	transition: 0.3s ease;
 }
 .navbar a:hover {
-	background: #f2f2f1;
+	background: #f2f2f2;
 }
 .navbar a:active {
 	box-shadow: #ddd 0px 0px 0px 3px;
@@ -180,13 +181,14 @@ label {
 	position: absolute;
 	top: 0;
 	z-index: 1;
-	overflow: auto;
+	overflow: hidden;
 	width: 200px;
 	height: 1000%;
 	background: #f7f7f7;
-	user-select: none;
-	display: block;
+
+	user-select: none;	
 	padding-top: 70px;
+	text-decoration: none;
 	padding-bottom: 20px;
     box-sizing: inherit;
 	margin: 0;
@@ -204,10 +206,11 @@ label {
 	
 }
 .content a:hover {
-	background: #f1f1f1;
+	background: #eee;
+	text-decoration: none;
 }
 .content a:active {
-	background: #ddd;
+	background: #ccc;
 }
 .content .active {
 	background: #004AF7;
@@ -229,8 +232,9 @@ label {
 	position: relative;
 	left: 15%;
 	top: 100px;
-	overflow: auto;
+	overflow: hidden;
 	width: 80%;
+	height: 500%;
 	font-family: arial;
 }
 
@@ -280,8 +284,9 @@ textarea {
 	position: relative;
 	left: 15%;
 	top: 100px;
-	overflow: auto;
+	overflow: hidden;
 	width: 80%;
+
 	font-family: arial;
 }
 
@@ -370,4 +375,102 @@ code {
     margin-left: 11px;
     background: #f1f1f1;
     color: red;
+}
+
+
+
+
+.buttoncl {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  color: #fff;
+  overflow:hidden; 
+  background-color: #004AF7;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #ddd;
+}
+
+.buttoncl:hover {background-color: #004AF7}
+
+.buttoncl:active {
+  background-color: #004AF7;
+  box-shadow: 0 5px #ccc;
+  transform: translateY(4px);
+}
+
+
+.logo2 {
+	box-shadow: none;
+}
+
+
+.btn-click1 {
+	padding: 10px 25px;
+	background: linear-gradient(#00B4FF, #0067FF);
+	outline: none;
+	font-size: 16px;
+	cursor: pointer;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 10px;
+	transition: 0.3s ease;
+	margin: 5px;
+	
+}
+.btn-click1:active {
+    box-shadow: #00B4FF 0px 0px 0px 3px;
+    
+}
+.btn-click1:hover {
+	background: linear-gradient(#00a2FF, #000AF7);
+}
+
+.btn-click2 {
+	padding: 10px 20px;
+	background: #fff;
+	margin-left: 10px;
+	border-radius: 15px;
+	font-family: verdana;
+	font-size: 16px;
+	border: 2px solid #000;
+	color: #000;
+	cursor: pointer;
+	outline: none;
+	transition: 0.3s ease;
+}
+.btn-click2:hover {
+	background: #f2f2f2;
+}
+
+.btn-click2:active {
+	background: #000;
+	color: #fff;
+}
+
+.pagination {
+	position: fixed;
+    top: 100px;
+    left: 85%;
+}
+.pagination a {
+	padding: 10px;
+	background: #000;
+	text-decoration: none;
+	color: #fff;
+	margin: -3px;
+}
+
+.pagination a:hover {
+	background: #004AF7;
+	color: #fff;
+}
+
+.pagination a:focus {
+	background: #004AF7;
+	
 }

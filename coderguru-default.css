@@ -1,0 +1,124 @@
+/* Coderguru-1.1*/
+/*Details: 
+This is a free CSS framework provided by SM Coderguru tutorials. You can use this framework without any license. Make
+beautiful CSS websites by using Coderguru.css templates. 
+
+About this template =>
+    This is a defult theme of CODERGURU.CSS framework. Make responsible website for all devices. Just write few of HTML lines and 
+    see the beautiful effect.
+    Very useful for beginner designer.
+    This framework does not support more than 5 tab links for navbar. We will try to solve this problem in next upcoming update.
+*/
+/*Default coderguru.css theme*/
+body { margin: 0; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding: 0;max-width: 100%;}
+h1,h2,h3,h4,h5,h6,p {text-transform: capitalize;}
+div {padding: 15px; margin: 15px;user-select: text;}
+.header {text-align: center;border: 1px solid #ccc; margin: 0px; background-color: #f9f9f9;}
+.footer {border: none; position: relative;left: 0;bottom: 0;background-color: #ddd;color: white;margin: 0;padding: 12px;}
+.header a {color: #000; text-decoration: none;}
+.header a:hover {text-decoration: underline;}
+.footer a {color: #000;display: inline-block;padding: 2px;}
+.footer a:hover {color: #333;}
+.footer .heading {color: #616161;margin: 15px;text-transform: none;}
+.footer p {color: #000;margin: 15px;}
+.footer .tablinks {width: 0%;margin: 5px;}
+.footer .tablinks .a {width: 100%; display: block;}
+.navbar {margin: 0;overflow: hidden;background: #000;border: none;padding: 15px;}
+.navbar a {border-radius: 15px;padding: 5px 15px;color: #bdb7b7;text-decoration: none;}
+.navbar a:hover {background: #333;color: #f1f1f1;}
+.navbar .right {margin: 0; padding: 0;float: right;}
+.navbar .center {margin: 0; padding: 0;text-align: center;}
+.heading {text-transform: none;}
+form {position: relative;}
+.formContent {display: block; width: 50%;margin: 10px;}
+.formContent input,textarea {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;}
+.formContent button[type="submit"] {padding: 10px; width: 100%;}
+@media screen and (max-width: 800px){.formContent {width: 100%;}}
+/*for textarea*/ .formContent .resizableFalse {resize: none;}
+                 .formContent .resizableTrue {resize: vertical;min-height: 100px;}
+
+/*button themes*/
+/*Default*/
+button {padding: 10px;outline: none;border: none;border-radius: 5px;font-size: 15px;color: #333;transition: 0.2s ease;cursor: pointer;background-image: linear-gradient(to top, #bebdbd 0%, #dadada 100%,#ddd 100%);}
+button:hover {background-image: linear-gradient(to top, #b6b4b4 0%, #ccc 100%, #ccc 100%);}
+button:active {color: rgb(49, 48, 48);background: linear-gradient(to top, #ccc, #ddd);}
+/*Stylish*/
+.cgBtn {padding: 10px;outline: none;border: none;border-radius: 5px;font-size: 15px;color: #fff;transition: 0.2s ease;cursor: pointer;background-image: linear-gradient(to top, #0c3483 0%, #004AF7 100%,#004AF7 100%);}
+.cgBtn:hover {background-image: linear-gradient(to top, #0c3483 0%, #008DF7 100%, #008DF7 100%);color: #fff;}
+.cgBtn:focus {box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 4px;background-image: linear-gradient(to top, #0c3483 0%, #008DF7 100%, #008DF7 100%);color: #fff;}
+.cgBtn.disabled {pointer-events: none; opacity: 0.6;}
+.cgBtn.red {padding: 10px;outline: none;border: none;border-radius: 5px;font-size: 15px;color: #fff;transition: 0.2s ease;cursor: pointer;background-image: linear-gradient(to top, #f70000 0%, #eb5e88 100%);}
+.cgBtn.red:hover {background-image: linear-gradient(to top, #f70000 0%, #e08591 100%);color: #fff;}
+.cgBtn.red:focus {box-shadow: rgba(204, 12, 12, 0.192) 0px 0px 0px 4px;background-image: linear-gradient(to top, #f70000 0%, #e08591 100%);}
+.cgBtn.black {padding: 10px;outline: none;border: none;border-radius: 5px;font-size: 15px;color: #fff;transition: 0.2s ease;cursor: pointer;background-image: linear-gradient(to top, #000000 0%, #333 100%);}
+.cgBtn.black:hover {background-image: linear-gradient(to top, #030303 0%, #6e6e6e 100%);color: #fff;}
+.cgBtn.black:focus {box-shadow: rgba(87, 86, 86, 0.25) 0px 0px 0px 4px;background-image: linear-gradient(to top, #030303 0%, #6e6e6e 100%);}
+.cgSubmit {padding: 10px;background: #fff;border: 1px solid #ccc;text-decoration: none;color: #333;background-image: linear-gradient(#ffff, #f1f1f1);border-radius: 5px;}
+.cgSubmit:hover {background: linear-gradient(#f8f8f8, #ddd);border: 1px solid #ddd;}
+.cgSubmit:active {background: linear-gradient(#f1f1f1, #ccc);}
+
+/*additional themes*/
+.cgLink {font-family: Arial, Helvetica, sans-serif;color: #000;background-color: rgb(255, 255, 255);padding: 2px;text-decoration: none;}
+.cgLink:hover {color: #fff;background-color: #0d67bb;}
+.cgLink.dark {font-family: Arial, Helvetica, sans-serif;color: #fff;background-color: transparent;padding: 2px;text-decoration: none;}
+.cgLink.dark:hover {color: #fff;background-color: #0d67bb;}
+.fSize-10 {font-size: 10px;}
+.fSize-12 {font-size: 12px;}
+.fSize-14 {font-size: 14px;}
+.fSize-16 {font-size: 16px;}
+.fSize-20 {font-size: 20px;}
+.fSize-36 {font-size: 36px;}
+.fSize-18 {font-size: 18px;}
+.fSize-22 {font-size: 22px;}
+.fSize-28 {font-size: 28px;}
+.ff-Verdana {font-family: Verdana, Tahoma, sans-serif;}
+.ff-Arial {font-family: Arial, Helvetica, sans-serif;}
+.ff-Monospace {font-family: monospace;}
+.ff-Garamond {font-family: garamond;}
+.ff-Impact {font-family: Impact;}
+.ff-Cursive {font-family: cursive;}
+.fw-bold {font-weight: 700;}
+.fw-boldX {font-weight: 900;}
+.fStyle-Italic {font-style: italic;}
+.fStyle-Bold {font-weight: bold;}
+.bg-black {background-color: #000; color: #fff;}
+.bg-white {background-color: #fff; color: #000;}
+
+/*Positions*/
+.displayFlex {display: flex;}
+.hAlign-Center {display: flex;justify-content: center;}
+.vAlign-Center {display: flex;align-items: center;}
+.posFixed {position: fixed; z-index: 99;}
+.posAbsolute {position: absolute;}
+.posRelative {position: relative;}
+
+/*Columns*/
+.row {display: flex;justify-content: center;align-items: center; width: 100%;padding: 0;margin: 0;}
+.colm2 {position: relative; width: 50%; padding: 10px;margin: 0;text-align: center;}
+.colm2.textAlign-left {text-align: left;}
+.colm2.textAlign-right {text-align: right;}
+.colm3 {position: relative; width: 33.3%; padding: 10px;margin: 0;text-align: center;}
+.colm3.textAlign-left {text-align: left;}
+.colm3.textAlign-right {text-align: right;}
+.colm4 {position: relative; width: 25%; padding: 10px;margin: 0;text-align: center;}
+.colm4.textAlign-left {text-align: left;}
+.colm4.textAlign-right {text-align: right;}
+.colm5 {position: relative; width: 20%; padding: 10px;margin: 0;text-align: center;}
+.colm5.textAlign-left {text-align: left;}
+.colm5.textAlign-right {text-align: right;}
+@media screen and (max-width:800px ) {.row {display: block;width: 100%;overflow: hidden;} .colm2, .colm3, .colm4, .colm5 {width: 100%;}}
+
+/*More*/
+.txt-UCase {text-transform: uppercase;}
+.txt-LCase {text-transform: lowercase;}
+.txt-Capital {text-transform: capitalize;}
+.fStyle-Underline {text-decoration: underline;} .fStyle-Overline {text-decoration: overline;}
+.fStyle-StrikeThrough {text-decoration-line: line-through;} .fStyle-StrikeThrough-False {text-decoration-line: none;}
+.fStyle-underline-False {text-decoration-line: none;} .fStyle-Overline-False {text-decoration-line: none;}
+.selection-True {user-select: all;}
+.selection-False {user-select: none;}
+.drag-True {-webkit-user-drag: element;}
+.drag-False {-webkit-user-drag: none;}
+.disabled {pointer-events: none;opacity: 0.7;}
+label {font-weight: bold;user-select: none;}
+.shapeCircle {font-size: 0;position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;clip-path: circle(20%);z-index: 999;padding: 0;margin: 0;}
